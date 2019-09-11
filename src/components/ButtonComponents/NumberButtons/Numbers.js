@@ -14,9 +14,9 @@ const Numbers = () => {
   return (
     <div className="numDiv">
 
-      {dataState.map((numbers, i) => {
+      {dataState.map(( numbers, i => 
         <NumberButton numbers={numbers} key = {i} />
-      })}
+      ))}
 
     </div>
   );

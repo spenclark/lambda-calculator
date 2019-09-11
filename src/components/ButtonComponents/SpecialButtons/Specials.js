@@ -7,12 +7,13 @@ import { specials } from "../../../data";
 
 const Specials = (props) => {
   // STEP 2 - add the imported data to state
-  const [specialState] = useState(specials)
+  const [specialState] = useState(specials);
+
   return (
     <div>
-      {specialState.map((specials, i) =>
+      {specialState.map((specials, i =>
         <SpecialButton specials={specials} key={i} />
-      )}
+      ))};
     </div>
   );
 };

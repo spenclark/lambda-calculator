@@ -10,9 +10,9 @@ export const Operators = (props) => {
   const [operatorState] = useState(operators)
   return (
     <div>
-      {operatorState.map((operators, i) =>
+      {operatorState.map((operators, i =>
         <OperatorButton operators={operators} key={i}/>
-      )}
+      ))}
     </div>
   );
 };
